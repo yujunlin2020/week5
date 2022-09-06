@@ -11922,6 +11922,14 @@ fieldset:disabled .btn {
   }
 }
 
+.w-10 {
+  width: 40px;
+}
+
+.h-10 {
+  height: 40px;
+}
+
 .list-style-none {
   list-style-type: none;
 }
