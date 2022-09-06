@@ -5,81 +5,280 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Boostrap Index</title>
+  <title>Assignment Index</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
 
-  <div class="d-flex align-items-start">
-    <div class="nav flex-column nav-pills py-5 bg-light" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-      <div class="logo"><img src="./assets/images/logo-ANSWER.svg" alt="logo"></div>
-      <button class="nav-link active" id="v-pills-Dashboard-tab" data-bs-toggle="pill"
-        data-bs-target="#v-pills-Dashboard" type="button" role="tab" aria-controls="v-pills-Dashboard"
-        aria-selected="true"><span class="material-icons align-middle pe-3">assessment</span>Dashboard</button>
-      <button class="nav-link" id="v-pills-Question-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Question"
-        type="button" role="tab" aria-controls="v-pills-Question" aria-selected="false"><span
-          class="material-icons align-middle pe-3">question_answer</span>Question</button>
-      <button class="nav-link" id="v-pills-Assignment-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Assignment"
-        type="button" role="tab" aria-controls="v-pills-Assignment" aria-selected="false"><span
-          class="material-icons">assignment</span>Assignment</button>
-      <button class="nav-link" id="v-pills-Course-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Course"
-        type="button" role="tab" aria-controls="v-pills-Course" aria-selected="false">Course</button>
-      <button class="nav-link" id="v-pills-Admin-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Admin"
-        type="button" role="tab" aria-controls="v-pills-Admin" aria-selected="false">Admin</button>
-      <button class="nav-link" id="v-pills-Settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Settings"
-        type="button" role="tab" aria-controls="v-pills-Settings" aria-selected="false">Settings</button>
-      <div class="user">
-        <div class="d-flex">
-          <div class="userPhoto w-10"></div>
-          <div class="userName">
-            <h6>Andy Chen</h6>
-            <div>andy0401@mail.com</div>
+  <div class="d-flex">
+    <div class="nav flex-column nav-pills py-5 bg-light min-vh-100 justify-content-between" id="v-pills-tab"
+      role="tablist" aria-orientation="vertical">
+      <ul class="list-style-none p-0">
+        <div class="logo px-5 mb-4"><img src="./assets/images/logo-ANSWER.svg" alt="logo"></div>
+        <li>
+          <button class="nav-link w-100 text-start px-5" id="v-pills-Dashboard-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-Dashboard" type="button" role="tab" aria-controls="v-pills-Dashboard"
+            aria-selected="true"><span class="material-icons align-middle pe-3">assessment</span>Dashboard</button>
+        </li>
+        <li>
+          <button class="nav-link w-100 text-start px-5" id="v-pills-Question-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-Question" type="button" role="tab" aria-controls="v-pills-Question"
+            aria-selected="false"><span class="material-icons align-middle pe-3">question_answer</span>Question</button>
+        </li>
+        <li>
+          <button class="nav-link w-100 text-start px-5 text-success border-start border-5 border-success"
+            id="v-pills-Assignment-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Assignment" type="button"
+            role="tab" aria-controls="v-pills-Assignment" aria-selected="false"><span
+              class="material-icons align-middle pe-3 text-success">assignment</span>Assignment</button>
+        </li>
+        <li>
+          <button class="nav-link w-100 text-start px-5" id="v-pills-Course-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-Course" type="button" role="tab" aria-controls="v-pills-Course"
+            aria-selected="false"><span class="material-icons align-middle pe-3">video_library</span>Course</button>
+        </li>
+        <li>
+          <button class="nav-link w-100 text-start px-5" id="v-pills-Admin-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-Admin" type="button" role="tab" aria-controls="v-pills-Admin"
+            aria-selected="false"><span class="material-icons align-middle pe-3">people</span>Admin</button>
+        </li>
+        <li>
+          <button class="nav-link w-100 text-start px-5" id="v-pills-Settings-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-Settings" type="button" role="tab" aria-controls="v-pills-Settings"
+            aria-selected="false"><span class="material-icons align-middle pe-3">settings</span>Settings</button>
+        </li>
+      </ul>
+      <div class="user d-flex px-5">
+        <div class="userPhoto">
+          <img src="./assets/images/andychen.jpeg" class="rounded-circle me-3" alt="">
+        </div>
+        <div class="userName">
+          <h5 class="fw-bold mb-0">Andy Chen</h5>
+          <h6 class="text-secondary">andy0401@mail.com</h6>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content w-100 px-5" id="v-pills-tabContent">
+      
+<div class="container">
+  <!-- header -->
+  <header class="d-flex align-items-center justify-content-between mt-5">
+    <div class="titleGroup d-flex align-items-center">
+      <h1 class="fs-5 mb-0">Assignment</h1>
+      <div class="drapDown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          All Courses
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">HTML&CSS</a></li>
+          <li><a class="dropdown-item" href="#">JavaScript</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-rightSide-icons">
+      <a href="#"><i class="material-icons icon me-4">search</i></a>
+      <a href="#"><i class="material-icons icon">notifications_active</i></a>
+    </div>
+  </header>
+  <!--  -->
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="drapDown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        All(4)
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="#">HTML&CSS</a></li>
+        <li><a class="dropdown-item" href="#">JavaScript</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+      </ul>
+    </div>
+    <span>2commets</span>
+  </div>
+  <!-- content -->
+  <div class="d-flex justify-content-center w-100">
+
+    <!-- list -->
+    <div class="list-group me-4 col-lg-4">
+      <a href="#" class="list-group-item list-group-item-action bg-light" aria-current="true">
+        <div class="assignmentGroup d-flex justify-content-between text-3">
+          <div class="assignment">Chapter Assignment2</div>
+          <div class="hours">4 hrs ago</div>
+        </div>
+        <div class="titleGroup d-flex justify-content-between align-items-center">
+          <div class="title fw-bold">Please chexk this file...</div>
+          <div class="name text-3">Emily Wang</div>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="assignmentGroup d-flex justify-content-between text-3">
+          <div class="assignment">Chapter Assignment1</div>
+          <div class="hours">12 hrs ago</div>
+        </div>
+        <div class="titleGroup d-flex justify-content-between align-items-center">
+          <div class="title fw-bold">My Homework</div>
+          <div class="name text-3">David Xu</div>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="assignmentGroup d-flex justify-content-between text-3">
+          <div class="assignment">Final Assignment</div>
+          <div class="hours">18 hrs ago</div>
+        </div>
+        <div class="titleGroup d-flex justify-content-between align-items-center">
+          <div class="title fw-bold">Have a problem with this...</div>
+          <div class="name text-3">Tony Wei</div>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="assignmentGroup d-flex justify-content-between text-3">
+          <div class="assignment">Final Assignment</div>
+          <div class="hours">19 hrs ago</div>
+        </div>
+        <div class="titleGroup d-flex justify-content-between align-items-center">
+          <div class="title fw-bold">Did I do it right?...</div>
+          <div class="name text-3">Christina Lin</div>
+        </div>
+      </a>
+    </div>
+    <!-- card 最右側 -->
+    <!-- user1 -->
+    <div class="card col-lg-8 me-4">
+      <div class="card-header">
+        <div class="assignmentGroup d-flex justify-content-between align-items-center text-3">
+          <div class="titleGroup">
+            <div class="assignment">Chapter Assignment2 / HTML&CSS</div>
+            <div class="title fw-bold fs-6">Please chexk this file for me, thanks!</div>
+          </div>
+          <div class="more"><span class="material-symbols-outlined md-36">
+              more_vert
+            </span></div>
+        </div>
+
+      </div>
+      <!-- user1 -->
+      <div class="card-body d-flex">
+        <div class="userPhoto w-10 h-10 me-2">
+          <img src="./assets/images/emilywang.jpeg" class="rounded-circle" alt="">
+        </div>
+        <div class="userInfo border-bottom">
+          <h6 class="card-title text-4 fw-bloder mb-1">Emily Wang</h6>
+          <h6 class="times text-3 gray-600">10:38 AM (4 hours ago)</h6>
+          <p class="card-text">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why
+            in the following code the height of the <span class="text-success">div</span> is bigger than the height of
+            the <span class="text-success">img </span>? There is a gap below the
+            image, but it doesn’t seems to be a padding/margin.
+            What is the gap or extra space below image?</p>
+          <a href="#" class="btn btn-light border boder-dark rounded-0 d-flex w-50 mb-3">
+            <span class="material-symbols-outlined">attach_file</span>
+            HW-2-David.zip</a>
+        </div>
+      </div>
+      <!-- user2 -->
+      <div class="card-body d-flex">
+        <div class="userPhoto w-10 h-10 me-2">
+          <img src="./assets/images/andychen.jpeg" class="rounded-circle" alt="">
+        </div>
+        <div class="userInfo">
+          <div class="userName d-flex justify-content-between">
+            <h6 class="card-title text-4 fw-bloder mb-1">Andy Chen (You)</h6>
+            <div class="editGroup">
+              <a href="#">
+                <i class="material-icons icon">star_border</i>
+              </a>
+              <a href="#">
+                <i class="material-icons icon">edit</i>
+              </a>
+            </div>
+          </div>
+          <h6 class="times text-3 gray-600">13:24 AM (1 hours ago)</h6>
+          <p class="card-text">Hi David, by default, an image is rendered inline, like a letter so it sits on the same
+            line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like
+            g, j, p and q.
+            <br>
+            <br>
+            You can:
+            <br>
+            <ul>
+              <li> adjust the <span class="text-success">vertical-align</span> of the image to position it elsewhere
+                (e.g. the <span class="text-success">middle</span> ) or</li>
+              <li>change the <span class="text-success">display </span>so it isn’t inline.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="bottom mt-3 d-flex flex-row-reverse justify-content-between">
+    <!-- button -->
+    <div class="">
+      <button class="btn btn-outline-success me-md-2 rounded-0" type="button">Make as read</button>
+      <button class="btn btn-success rounded-0 text-light" type="button">Reply</button>
+    </div>
+    <!-- pagenation -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link border-0" href="#" aria-label="Previous">
+            <span aria-hidden="true"><i class="material-icons icon">chevron_left</i></span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link border-0" href="#" aria-label="Next">
+            <span aria-hidden="true"><i class="material-icons icon">chevron_right</i></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- 空值 -->
+    <div></div>
+  </div>
+
+</div>
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button> -->
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="tab-content" id="v-pills-tabContent">
-      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-  <div class="container">
-
-  </div>
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
+  </div> -->
     </div>
   </div>
-</div>
 
-      <div class="tab-pane fade" id="v-pills-Question" role="tabpanel" aria-labelledby="v-pills-Question-tab">...</div>
-      <div class="tab-pane fade" id="v-pills-Assignment" role="tabpanel" aria-labelledby="v-pills-Assignment-tab">...
-      </div>
-      <div class="tab-pane fade" id="v-pills-Course" role="tabpanel" aria-labelledby="v-pills-Course-tab">...</div>
-      <div class="tab-pane fade" id="v-pills-Admin" role="tabpanel" aria-labelledby="v-pills-Admin-tab">...</div>
-      <div class="tab-pane fade" id="v-pills-Settings" role="tabpanel" aria-labelledby="v-pills-Settings-tab">...</div>
-    </div>
-  </div>
+
 
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
